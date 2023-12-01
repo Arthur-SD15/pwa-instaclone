@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+body {
+  scrollbar-width: 0px;
+}
+
+#insta {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#insta header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  min-height: 44px;
+  padding: 0 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#insta main {
+  flex: 1;
+  background-color: #f3f3f3;
+  padding: 45px 0;
+}
+
+#insta footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  min-height: 44px;
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+a {
+  color: black;
+}
+
+#insta footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+}
+
+#camera,
+#camera--view,
+#camera--sensor,
+#camera--output {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#camera--view,
+#camera--sensor,
+#camera--output {
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+.camera-button {
+  width: 100px;
+  background: linear-gradient(45deg, #8A3AB9, #FFA07A);
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+}
+
+#camera--trigger {
+  bottom: 50px;
+  left: calc(50% - 160px);
+}
+
+#camera--switch {
+  bottom: 50px;
+  left: calc(50% + 60px);
+}
+
+.taken {
+  height: 100px !important;
+  width: 100px !important;
+  transition: all 0.5s ease-in;
+  border: solid 3px white;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
