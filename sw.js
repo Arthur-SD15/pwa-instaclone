@@ -19,7 +19,7 @@ const pageCache = new CacheFirst({
 
 //indicando o cache de página
 warmStrategyCache({
-  urls: ['/index.html', '/', '/photo.html'],
+  urls: ['/index.html', '/', '/secundaria.html'],
   strategy: pageCache,
 });
 //registrando a rota
