@@ -6,7 +6,7 @@ import { ExpirationPlugin } from 'workbox-expiration';
 
 // configurando o cache
 const pageCache = new CacheFirst({
-  cacheName: 'pwa-cam',
+  cacheName: 'pwa-insta',
   plugins: [
     new CacheableResponsePlugin({
       statuses: [0, 200],
@@ -19,7 +19,7 @@ const pageCache = new CacheFirst({
 
 //indicando o cache de página
 warmStrategyCache({
-  urls: ['/index.html', '/'],
+  urls: ['/index.html', '/', '/photo.html'],
   strategy: pageCache,
 });
 //registrando a rota
