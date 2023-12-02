@@ -3,22 +3,22 @@
     "short_name": "ic",
     "icons": [
         {
-            "src": "images/instagram_.png",
+            "src": "/images/instagram_.png",
             "sizes": "128x128",
             "type": "image/png"
         },
         {
-            "src": "images/instagram_256.png",
+            "src": "/images/instagram_256.png",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "images/instagram_512.png",
+            "src": "/images/instagram_512.png",
             "sizes": "512x512",
             "type": "image/png"
         },
         {
-            "src": "images/instagram_64.png",
+            "src": "/images/instagram_64.png",
             "sizes": "256x256",
             "type": "image/png",
             "purpose": "maskable"
