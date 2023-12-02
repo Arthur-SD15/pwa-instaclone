@@ -87,6 +87,12 @@ cameraSwitch.addEventListener('click', () => {
   cameraStart();
 });
 
+function stopMediaTracks(stream){
+  stream.getTracks().forEach(track => {
+    track.stop()
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   navigator.mediaDevices.getUserMedia({ video: true })
     .then((stream) => {
